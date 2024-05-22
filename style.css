@@ -77,7 +77,8 @@ h5 {
 .card{
     margin: 0.5em;
     width: calc(100%/3); /* sets the width to a third of the width available*/
-    background-color: #f9f9f96d;
+    /* background-color: #f9f9f96d; */
+   backdrop-filter: blur(20px);
 }
 
 
