@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback | WarnerBros.</title>
+    <style>
+        /* Global Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(background.jpeg);
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Header Styles */
+        .header {
+            background-color: rgba(255, 255, 255, 0.8);
+            width: 100%;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header img {
+            height: 40px;
+            width: auto;
+            cursor: pointer;
+        }
+
+        .nav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .nav li {
+            margin-right: 20px;
+        }
+
+        .nav li:last-child {
+            margin-right: 0;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+
+        /* Form Styles */
+        .form-container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-element {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-element:focus {
+            border-color: #45a049;
+        }
+
+        .form-submit {
+            background-color: #67686a;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .form-submit:hover {
+            background-color: #45a049;
+        }
+
+        /* Footer Styles */
+        .footer {
+            background-color: rgba(255, 255, 255, 0.8);
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .footer img {
+            height: 30px;
+            width: auto;
+        }
+
+        .social-media-links {
+            display: flex;
+        }
+
+        .social-media-links a {
+            margin-left: 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+            }
+
+            .nav {
+                flex-direction: column;
+            }
+
+            .nav li {
+                margin-right: 0;
+            }
+
+            .form-container {
+                padding: 10px;
+            }
+
+            .footer {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html"><img src="image.png" alt="Logo"></a>
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="tvshows.html">TV Shows</a></li>
+            <li><a href="games.html">Games & Apps</a></li>
+            <li><a href="collections.html">Collections</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="form-container">
+            <form action="/register" method="post">
+                <input type="text" name="name" class="form-element" placeholder="Name" required>
+                <input type="email" name="email" class="form-element" placeholder="Email" required>
+                <input type="password" name="password" class="form-element" placeholder="Password" required>
+                <input type="password" name="confirm_password" class="form-element" placeholder="Confirm Password" required>
+                <input type="submit" value="Register" class="form-submit">
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>
+            <img src="image.png" alt="Logo">
+            &copy; 2024 WarnerBros. All rights reserved.
+           </p>
+
+           <div class="social-media-links">
+            <a href="https://www.facebook.com/warnerbrosent/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com/Warnerbros/"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/warnerbrosentertainment/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/warner-bros--entertainment/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/user/WarnerBrosPictures"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
