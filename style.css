@@ -1,0 +1,171 @@
+ /* Global Styles */
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-image: url(background.jpeg); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1040px;
+    padding-bottom: 950px;
+
+}
+
+/* Header Styles */
+.header {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header img {
+    height: 40px;
+    width: auto;
+    cursor: pointer;
+}
+
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav li {
+    margin-right: 20px;
+}
+
+.nav li:last-child {
+    margin-right: 0;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    white-space: nowrap;
+}
+    
+
+.cards-wrapper{
+    display: flex;
+ 
+}
+
+.card{
+    margin: 0.5em;
+    width: calc(100%/3); /* sets the width to a third of the width available*/
+    background-color: #f9f9f96d;
+}
+
+
+
+.image-wrapper{
+    height: 22vw;
+    margin: 0 auto;
+  /*  align-items: center;
+    justify-content: center; */
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* to display multiple cards at a time*/
+
+@media screen and(min-width:567px) {
+    .carousel-inner{
+        display:flex;
+    }
+    .carousel-item{
+        display: block;
+        margin-right: 0;
+        flex: 0 0 calc(100%/3);
+    }
+
+}
+
+
+@media screen and(max-width:567px;){
+    .card:not(:first-child){
+        display: none;
+    } /* to display only one slide on smaller screens*/
+    
+}
+
+
+.image-wrapper img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.footer img {
+    height: 30px;
+    width: auto;
+}
+
+.social-media-links {
+    display: flex;
+}
+
+.social-media-links a {
+    margin-left: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .nav {
+        flex-direction: column;
+    }
+
+    .nav li {
+        margin-right: 0;
+    }
+
+    .form-container {
+        padding: 10px;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
